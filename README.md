@@ -25,6 +25,7 @@ The deployment is the central kubernetes primitive used for managing your applic
 
 ### deployment with 3 replicas 
 ```shell
+k create deploy -h | less
 k create deployment nginx --image=nginx:1.24 --replicas=3
 k get events
 k get po 
@@ -43,6 +44,7 @@ k  get deploy nginx -o yaml >first.yaml
 # replace the status block of lines by status: {}
 k delete deploy nginx
 # k delete -f first.yaml
+k create -f first.yaml
 ```
 ### Replica 
 ```shell
