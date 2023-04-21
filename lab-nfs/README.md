@@ -1,15 +1,23 @@
-see all scripts
+# NFS Share,  persistence volume and persistence volume claim
+
+![persistent](../screenshot/persistent_volume.png)
+
+
 ```shell
-# Go on the master 
+# Go on the master node
 # BEWARE:  change the server ip address beforehand
 k create -f pv.yaml   # create a persistentvolume
 k get pv     # check persistentVolume
 k get pvc    # check persistentVolumeClaim 
+```
+
+```shell
 k create -f pvc.yaml   # create a persistentvolume
 k get pvc   # Check 
 k create -f nfs-pod.yaml  # install a pod connected to the pvc
 k get pods    # Check 
 k describe pod nginx-xxxxx  # verify  
+k exec -it nginx-nfs-xxxx -- bash
 ```
 ## Resource Quota
 ```shell

@@ -1,5 +1,17 @@
 # stress-ng usage
 ```shell
-docker run --rm ghcr.io/colinianking/stress-ng --help
-stress-ng --all 4 --timeout 5m
+k create -f stress-ng.yaml
+# wait till the pod restarts
+# Check the OOM
+```
+
+Add resources under container - name: stress-ng
+```yaml
+      resources:
+        limits:
+          cpu: '2'
+          memory: "5Gi"
+        requests:
+          cpu: "1"
+          memory: "3Gi"
 ```

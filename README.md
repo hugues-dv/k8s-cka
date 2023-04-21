@@ -15,6 +15,7 @@ source <( kubectl completion bash | sed s/kubectl/k/g )
 k get nodes   # Check
 k api-resources # list of kubernetes resources
 k get no -o wide
+k describe no master
 ```
 
 ## Deployment
@@ -51,4 +52,14 @@ k create -f first.yaml
 k delete po nginx-xxx 
 ```
 
-Go to lab-pod 
+## Outlines
+* go to lab-pod   
+* go to lab-stress  
+* go to lab-resource-limit  
+* go to lab-replicaset
+* go to lab-labels
+* go to lab-nfs
+* go to lab-rook
+* go to lab-deployment
+* go to lab-rollingupdate
+* go to configmap
