@@ -1,4 +1,4 @@
-# install nfs
+# install nfs v3 on ubuntu 18.04
 
 ```shell
 # deploy first
@@ -18,4 +18,6 @@ sudo exportfs -ra   # reload for the change takes effect
 sudo apt-get update 
 sudo apt-get -y install nfs-common  # add  nfs client package
 showmount -e <master_address_ip>   # check whether the shared mount works
+sudo mkdir -p /nfs/general # create a directory
+sudo mount 10.128.0.15:/opt/sfw /nfs/general # mapping of nfs share to mountpoint directory
 ```

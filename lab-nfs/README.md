@@ -2,7 +2,7 @@ see all scripts
 ```shell
 # Go on the master 
 # BEWARE:  change the server ip address beforehand
-k create -f PVol.yaml   # create a persistentvolume
+k create -f pv.yaml   # create a persistentvolume
 k get pv     # check persistentVolume
 k get pvc    # check persistentVolumeClaim 
 k create -f pvc.yaml   # create a persistentvolume
@@ -18,7 +18,7 @@ k delete pvc pvc-one
 k delete pv pvvol-1 
 k create namespace small
 k describe ns small 
-k  create -f PVol.yaml  
+k  create -f pv.yaml  
 k -n small create -f pvc.yaml 
 
 k -n small create -f storage-quota.yaml 
@@ -41,7 +41,7 @@ k -n small delete pvc pvc-one
 k -n small get pv 
 # see the status set to released
 k delete pv pvvol-1 
-k create -f PVol.yaml 
+k create -f pv.yaml 
 kubectl patch pv pvvol-1 -p '{"spec":{"persistentVolumeReclaimPolicy":"Delete"}}'
 # see the reclaim policy is set to Delete
 k describe ns small

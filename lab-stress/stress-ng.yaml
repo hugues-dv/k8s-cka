@@ -1,0 +1,9 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: stress-ng
+spec:
+  containers:
+    - name: stress-ng
+      image: ghcr.io/colinianking/stress-ng
+      args: [ '--all', '4' ,'--timeout', '10m']
