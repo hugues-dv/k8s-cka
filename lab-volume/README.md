@@ -13,7 +13,7 @@ slate again.
 
 There are many uses cases for wanting to mount a volume in a container. One of the
 most prominent use cases are multi-container Pods that use a volume to exchange
-data between a main application container and a sidecar. Figure illustrates the
+data between a main application container and a sidecar. Figure above illustrates the
 differences between the temporary filesystem of a container and the use of a volume.
 
 ```shell
@@ -23,11 +23,11 @@ k exec business-app -it -- /bin/sh
 ```
 
 ## Volume Type relevant to exam
-* emptyDir Empty directory in Pod with read/write access. Persisted for only the lifespan of a Pod. A good choice for cache implementations or data exchange between containers of a Pod.  
-* hostPath File or directory from the host node’s filesystem.  
-* configMap, secret. Provides a way to inject configuration data.   
-* nfs An existing Network File System (NFS) share. Preserves data after Pod restart.  
-* persistentVolumeClaim. Claims a persistent volume.   
+* **EmptyDir**: Empty directory in Pod with read/write access. Persisted for only the lifespan of a Pod. A good choice for cache implementations or data exchange between containers of a Pod.  
+* **hostPath**: File or directory from the host node’s filesystem.  
+* **configMap**: secret. Provides a way to inject configuration data.   
+* **nfs**: An existing Network File System (NFS) share. Preserves data after Pod restart.  
+* **persistentVolumeClaim**: Claims a persistent volume.   
 
 
 
@@ -95,13 +95,17 @@ k describe pod nginx-xxxxx  # verify
 k exec -it nginx-nfs-xxxx -- bash
 ```
 ## Resource Quota
+A resource quota, defined by a ResourceQuota object, provides constraints that limit aggregate resource consumption per namespace. It can limit the quantity of objects that can be created in a namespace by type, as well as the total amount of compute resources that may be consumed by resources in that namespace.
+
+
+
 ```shell
 k delete deployments.apps nginx-nfs 
 k delete pvc pvc-one 
 k delete pv pvvol-1 
 k create namespace small
 k describe ns small 
-k  create -f pv.yaml  
+k  create -f pv.yaml 
 k -n small create -f pvc.yaml 
 
 k -n small create -f storage-quota.yaml 
