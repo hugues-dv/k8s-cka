@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: small
   annotations:
     deployment.kubernetes.io/revision: "1"
   labels:

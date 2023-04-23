@@ -59,7 +59,6 @@ k delete po nginx-xxx
 * go to lab-replicaset
 * go to lab-labels
 * go to lab-nfs
-* go to lab-rook
 * go to lab-deployment
 * go to lab-rollingupdate
 * go to configmap
