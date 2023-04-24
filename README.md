@@ -100,14 +100,6 @@ kubectl get svc
 k get svc -A
 ```
 
-
-
-
-
-
-
-
-
 ## Outlines
 * go to lab-etcd
 * go to lab-pod   
@@ -120,6 +112,5 @@ k get svc -A
 * go to lab-nfs
 * go to lab-deployment
 * go to lab-configmap
-* go to lab-autoscaler
 * go to lab-rollingupdate
 * go to lab-taint-tolerations

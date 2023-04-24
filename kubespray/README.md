@@ -4,6 +4,10 @@ Kubernetes en production. Il repose en grande partie sur Ansible. Son point fort
 nombre de paramètres à l'installation. Par exemple, on peut très facilement définir 
 le CNI (Container Network Interface) ou le CRI (Container Runtime Interface) qu'on veut utiliser.
 
+
+## Architecture
+![hosts](../screenshot/hosts.png)
+
 ## Pre-requisite
 ```shell
 sudo apt update   # update all packages repo
