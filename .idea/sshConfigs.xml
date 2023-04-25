@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig host="35.193.5.161" id="2e3ff999-47e9-49c8-8510-8453f3b3059a" keyPath="C:\Users\h2vre\OneDrive\Documents\Webforce_3\Kubernetes\k8s-cka\id_rsa" port="22" customName="node -x" nameFormat="CUSTOM" username="hugues" useOpenSSHConfig="true">
+        <option name="customName" value="node -x" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>
