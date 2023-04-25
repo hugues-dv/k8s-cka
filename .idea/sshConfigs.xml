@@ -5,6 +5,9 @@
       <sshConfig host="35.193.5.161" id="2e3ff999-47e9-49c8-8510-8453f3b3059a" keyPath="C:\Users\h2vre\OneDrive\Documents\Webforce_3\Kubernetes\k8s-cka\id_rsa" port="22" customName="node -x" nameFormat="CUSTOM" username="hugues" useOpenSSHConfig="true">
         <option name="customName" value="node -x" />
       </sshConfig>
+      <sshConfig authType="PASSWORD" host="170.75.161.30" id="b52e6796-0a64-475f-832b-4d22b60716fd" port="22" customName="gateway" nameFormat="CUSTOM" username="hugues" useOpenSSHConfig="true">
+        <option name="customName" value="gateway" />
+      </sshConfig>
     </configs>
   </component>
 </project>

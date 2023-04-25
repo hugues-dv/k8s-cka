@@ -9,17 +9,24 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="gateway">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/hugues" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="master">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/home/hugues" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
       <paths name="nodeX">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/home/hugues/k8s-cka" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

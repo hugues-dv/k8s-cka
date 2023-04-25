@@ -5,19 +5,26 @@
       <webServer id="f3757fc8-46ba-4a66-8fae-155cd28cf223" name="Kubernetes-hugues">
         <fileTransfer accessType="SFTP" host="35.202.99.206" port="22" sshConfigId="ca53b47a-1015-465c-bcf0-63659a9fac18" sshConfig="master" keyPair="true">
           <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="30000" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
         </fileTransfer>
       </webServer>
       <webServer id="dd6f6ba1-8897-43c6-adf3-e33d1125bacb" name="master">
         <fileTransfer accessType="SFTP" host="35.202.99.206" port="22" sshConfigId="ca53b47a-1015-465c-bcf0-63659a9fac18" sshConfig="master" keyPair="true">
           <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="30000" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
         </fileTransfer>
       </webServer>
       <webServer id="3761b287-c5f1-4d01-b6ca-cc78b9acd51c" name="nodeX">
         <fileTransfer accessType="SFTP" host="35.193.5.161" port="22" sshConfigId="2e3ff999-47e9-49c8-8510-8453f3b3059a" sshConfig="node -x" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="615c4cf5-b841-4e22-b35e-cf9e335a0b60" name="gateway">
+        <fileTransfer accessType="SFTP" host="170.75.161.30" port="22" sshConfigId="b52e6796-0a64-475f-832b-4d22b60716fd" sshConfig="gateway">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
